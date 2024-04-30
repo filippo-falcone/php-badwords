@@ -1,6 +1,8 @@
 <?php
 $paragraph = $_GET['paragraph'];
 $censoredWord = $_GET['word'];
+$paragraphFirstUppercase = ucfirst($paragraph);
+$paragraphLength = strlen($paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +18,8 @@ $censoredWord = $_GET['word'];
         <h1>PHP Badwords</h1>
         <h2>Paragrafo</h2>
         <div class="card">
-            <p><?php echo $paragraph; ?></p>
-            <p>Lunghezza paragrafo: [Number]</p>
+            <p><?php echo $paragraphFirstUppercase; ?></p>
+            <p>Lunghezza paragrafo: <?php echo $paragraphLength ?> caratteri</p>
         </div>
         <h2 class="censored">Paragrafo Censurato</h2>
         <div class="card">
