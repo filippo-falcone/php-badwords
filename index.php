@@ -10,7 +10,7 @@
     <div class="container">
         <h1>PHP Badwords</h1>
         <form action="censored.php" method="GET">
-            <textarea name="paragraph" cols="30" rows="10" placeholder="Inserisci un paragrafo" required></textarea>
+            <textarea name="paragraph" cols="30" rows="10" placeholder="Inserisci un testo" required></textarea>
             <div class="input-container">
                 <button type="submit">Invia</button>
                 <input name="word" type="text" placeholder="Inserisci la parola che vuoi censurare" required>
