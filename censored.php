@@ -3,6 +3,7 @@ $paragraph = $_GET['paragraph'];
 $censoredWord = $_GET['word'];
 $paragraphFirstUppercase = ucfirst($paragraph);
 $paragraphLength = strlen($paragraph);
+$paragraphCensored = str_replace($censoredWord, '***', $paragraphFirstUppercase);
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ $paragraphLength = strlen($paragraph);
         </div>
         <h2 class="censored">Paragrafo Censurato</h2>
         <div class="card">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sunt nulla ducimus praesentium nam, laudantium doloribus voluptate recusandae necessitatibus sequi quis. Minima nobis odit, enim perspiciatis porro sint ipsa saepe.</p>
+            <p><?php echo $paragraphCensored ?></p>
         </div>
     </div>
 </body>
