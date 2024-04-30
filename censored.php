@@ -20,11 +20,11 @@ $paragraphCensored = str_replace($censoredWord, '***', $paragraphFirstUppercase)
         <h2>Paragrafo</h2>
         <div class="card">
             <p><?php echo $paragraphFirstUppercase; ?></p>
-            <p>Lunghezza paragrafo: <?php echo $paragraphLength ?> caratteri</p>
+            <p>Lunghezza paragrafo: <?php echo $paragraphLength; ?> caratteri</p>
         </div>
         <h2 class="censored">Paragrafo Censurato</h2>
         <div class="card">
-            <p><?php echo $paragraphCensored ?></p>
+            <p><?php echo $paragraphCensored; ?></p>
         </div>
     </div>
 </body>
