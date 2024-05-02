@@ -5,6 +5,7 @@ $paragraphFirstUppercase = ucfirst($paragraph);
 $paragraphLength = strlen($paragraph);
 $paragraphCensored = str_replace($censoredWord, '***', $paragraph);
 $paragraphCensoredUpper = ucfirst($paragraphCensored);
+$paragraphCensoredLength = strlen($paragraphCensored);
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,7 @@ $paragraphCensoredUpper = ucfirst($paragraphCensored);
         <h2 class="censored">Paragrafo Censurato</h2>
         <div class="card">
             <p><?php echo $paragraphCensoredUpper; ?></p>
+            <p>Lunghezza paragrafo: <?php echo $paragraphCensoredLength; ?> caratteri</p>
         </div>
     </div>
 </body>
